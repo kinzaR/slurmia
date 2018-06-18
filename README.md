@@ -31,7 +31,7 @@ sudo npm install -g forever
 ```
 
 ### Clone repository
-git clone git@github.com:kinzaR/slurmia.git
+git clone https://github.com/kinzaR/slurmia.git
 
 ### Install npm modules
 Go to repository directory and run:
