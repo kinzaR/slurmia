@@ -1,6 +1,7 @@
 build/
 node_modules/
 bower_components/
+logs/
 
 config.json 
 mail.json
