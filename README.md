@@ -1,5 +1,4 @@
 # slurmia
-SLurmia
 =================
 
 Slurmia is a backend for user, file and job management, using web services developed in node and express (based on Stevia-server).
