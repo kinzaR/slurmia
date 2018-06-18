@@ -1,0 +1,12 @@
+#!/bin/bash
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+echo "Stopping..."
+$SCRIPT_DIR/stop
+
+echo "Creating logs dir"
+mkdir -p $SCRIPT_DIR/../logs
+
+echo "Starting..."
+$SCRIPT_DIR/start-server
+$SCRIPT_DIR/start-daemon

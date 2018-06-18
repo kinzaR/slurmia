@@ -1,0 +1,1 @@
+nodes=$(sinfo -o %n -h); cpus=$(for node in ${nodes}; do sinfo -o %c -n ${node} -h; done|awk '{a=a+$1}END{print a}'); cpus_alloc=$(for node in ${nodes}; do sinfo -o %C -n ${node} -h; done|awk '{a=a+$1}END{print a}'); expr ${cpus_alloc} \* 100 / ${cpus}

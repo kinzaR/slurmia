@@ -1,0 +1,1 @@
+nodes=$(sinfo -o %n -h); mem=$(for node in ${nodes}; do sinfo -o %m -n ${node} -h; done|awk '{a=a+$1}END{print a}'); mem_alloc=$(for node in ${nodes}; do sinfo -O allocmem -n ${node} -h; done|awk '{a=a+$1}END{print a}'); expr ${mem_alloc} \* 100 / ${mem}

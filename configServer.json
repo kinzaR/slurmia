@@ -1,0 +1,9 @@
+{
+    "mongodb": "mongodb://stvuser:stvpass@sql01:27018/stevia-server-1-0-0_p9901",
+    "httpPort": 9901,
+    "urlPathPrefix": "/stv01",
+    "steviaDir": "/httpd/bioinfo/stevia-server/1.0.0_p9901_home/",
+    "toolsPath": "tools/",
+    "usersPath": "users/",
+    "queue": "babelomics5.q"
+}
